@@ -10,9 +10,9 @@ export class Movies extends Component {
     }
 
    handelClick =(movie)=>{
-       const movies=this.state.movies.filter((m)=>m._id!== movie.id)
-       this.setState.movies({movies:movies}) 
-   }
+       const movies=this.state.movies.filter((m) => m._id!== movie._id);
+       this.setState({movies:movies}) 
+}
     
     render() { 
         return<div>
@@ -35,7 +35,7 @@ export class Movies extends Component {
                         <td>{movie.numberInStock}</td>
                         <td>{movie.dailyRentalRate}</td>
                         <td>
-                            <button onClick={()=>{this.handelClick(movie)}} className="btn btn-danger">
+                            <button onClick={()=>this.handelClick(movie)} className="btn btn-danger">
                                 supprimer
                             </button>
                         </td>
