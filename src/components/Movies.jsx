@@ -27,7 +27,8 @@ export class Movies extends Component {
             </thead>
 
             <tbody>
-                {this.state.movies.map ((movie)=>{
+                {this.state.movies.map ((movie)=>(
+                    
                     <tr key={movie._id}>
                         <td>{movie.title}</td>
                         <td>{movie.genre}</td>
@@ -39,12 +40,12 @@ export class Movies extends Component {
                             </button>
                         </td>
                     </tr>
-                })}
+                ))}
             </tbody>
         </table>
         </div>
        
-        ;
+        
     }
 }
  
