@@ -36,7 +36,7 @@ export class Movies extends Component {
                         <td>{movie.dailyRentalRate}</td>
                         <td>
                             <button onClick={()=>{this.handelClick(movie)}} className="btn btn-danger">
-                                supprimer
+                                supprimer DAVID
                             </button>
                         </td>
                     </tr>
